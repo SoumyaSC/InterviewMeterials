@@ -1,3 +1,5 @@
+package Algorithms;
+
 class Node{
     int data;
     Node next;

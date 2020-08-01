@@ -1,3 +1,5 @@
+package Algorithms.Trees;
+
 class BinaryNode{
     int data;
     BinaryNode left;

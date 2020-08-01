@@ -1,7 +1,9 @@
+package Threads;
+
 class A implements Runnable{
    public void run(){
        for(int i=0; i<10; i++){
-           System.out.println("A" + i);
+           System.out.println("Threads.A" + i);
        }
    }
 }
@@ -9,7 +11,7 @@ class A implements Runnable{
 class B implements Runnable{
     public void run(){
         for(int i=0; i<10; i++) {
-            System.out.println("B" + i);
+            System.out.println("Threads.B" + i);
         }
     }
 }

@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class HappyNumber {
     public boolean isHappy(int n) {
         int returnRes = n;

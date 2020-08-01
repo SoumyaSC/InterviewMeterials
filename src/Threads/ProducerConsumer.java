@@ -1,4 +1,4 @@
-import java.util.function.Consumer;
+package Threads;
 
 class Base{
     int data;

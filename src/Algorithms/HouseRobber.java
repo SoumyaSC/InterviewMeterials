@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class HouseRobber {
     public int rob(int[] num) {
         if(num==null || num.length == 0)

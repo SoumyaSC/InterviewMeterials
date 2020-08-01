@@ -1,3 +1,5 @@
+package Algorithms;
+
 class NodeBB{
     char data;
     NodeBB next;

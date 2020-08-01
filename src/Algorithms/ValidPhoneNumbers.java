@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class ValidPhoneNumbers {
     public void validPhoneNumbers(String []str){
         Boolean valid = false;

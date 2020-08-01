@@ -1,3 +1,5 @@
+package Algorithms;
+
 //Longest Common Prefix
 //Input: ["flower","flow","flight"]
 //Output: "fl"
