@@ -49,14 +49,12 @@ class BalanceBracket {
             if(brackets[i] == '[' || brackets[i] == '{' || brackets[i] == '(') {
                 insertAtBeg(brackets[i]);
             }
-
-
             else if(head != null && brackets[i] == ']'){
                 if(head.data == '['){
                     deleteFromBeg();
                 }
                 else{
-                    System.out.println("SC1");
+                    //System.out.println("SC1");
                     return false;
                 }
             }
@@ -73,13 +71,11 @@ class BalanceBracket {
                     deleteFromBeg();
                 }
                 else{
-                    System.out.println("SC3");
+                    //System.out.println("SC3");
                     return false;
                 }
             }
         }
-
-
 
         if(head == null){
             return true;
