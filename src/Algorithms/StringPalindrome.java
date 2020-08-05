@@ -1,4 +1,4 @@
-package Algorithms.Trees;
+package Algorithms;
 
 /*Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
@@ -11,7 +11,6 @@ package Algorithms.Trees;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class StringPalindrome {
     public boolean isPalindrome(String s) {

@@ -3,12 +3,14 @@ package Algorithms;
 public class ReverseBits {
     // you need treat n as an unsigned value
     public int reverseBits(int n) {
-        //convert to string
+        //convert int to string
         String str = String.valueOf(n);
         System.out.println(str);
-        //convert to char
+
+        //convert string to char
         char []ch = str.toCharArray();
         System.out.println(ch);
+
         //take a temp char
         char []ch2 = new char[str.length()];
 
