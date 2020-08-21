@@ -56,12 +56,12 @@ public class IfEqualsAreSameHashCodeAreSame {
         we have to write one efficient hash function for the class
         Now writing hash function for easier classes with less vars are easy
         But for complicated classes it is difficult to write a hashcode function which
-        retuns same hashcode value if objects are equal in its core
+        returns same hashcode value if objects are equal in its core
 
         Attn: Follow the hashcode() impl in the commented code in the Book class
         to get the same hash code in this case
 */
         System.out.println("Book1 hashcode: " + book1.hashCode()
-        + " Book2 hahscode: " + book2.hashCode());
+        + " || Book2 hahscode: " + book2.hashCode());
     }
 }
