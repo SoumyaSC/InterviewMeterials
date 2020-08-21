@@ -56,6 +56,7 @@ public class IsHeightBalanced {
         }
 
         int isHeightBalanced = 0;
+        //A tree is called height balanced if height abs. is less that 1
         if(Math.abs(leftHeight - rightHeight)<= 1){
              isHeightBalanced = 1;
         }

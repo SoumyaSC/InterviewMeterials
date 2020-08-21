@@ -57,19 +57,22 @@ public class SingleLinkedList {
     }
 
     public void deleteFromAnyPosition(int data){
+        //take 2 pointers, one pointing to head and other head.next
         Node trav1 = head;
         Node trav2 = head.next;
 
+        //if head.data is the node we want to delete
         if(trav1.data == data){
             deleteFromBeg();
         }
 
+        //if head.next.data is the data we want to delete
         if(trav2.data == data) {
             trav2 = trav2.next;
             trav1.next = trav2;
         }
         else {
-
+            //other than that case
             while (trav2.next.data != data) {
                 trav1 = trav1.next;
                 trav2 = trav2.next;

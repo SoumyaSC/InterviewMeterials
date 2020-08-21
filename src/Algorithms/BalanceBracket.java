@@ -54,7 +54,6 @@ class BalanceBracket {
                     deleteFromBeg();
                 }
                 else{
-                    //System.out.println("SC1");
                     return false;
                 }
             }
@@ -71,7 +70,6 @@ class BalanceBracket {
                     deleteFromBeg();
                 }
                 else{
-                    //System.out.println("SC3");
                     return false;
                 }
             }

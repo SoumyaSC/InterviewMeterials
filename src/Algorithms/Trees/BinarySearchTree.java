@@ -1,5 +1,7 @@
 package Algorithms.Trees;
 
+//https://www.youtube.com/watch?v=RBSGKlAvoiM&t=14127s
+
 class BinaryNode{
     int data;
     BinaryNode left;
@@ -110,13 +112,12 @@ public class BinarySearchTree {
                 //Here I am going to find the min value of the right subtree, replace that with root, and delete the
                 //left node. So it essentially be one of the upper two cases.
                 //If I go with option 1, I will have a case where I will have right subtree left. So i will call
-                //remove(tmp.data, tmp.right
+                //remove(tmp.data, tmp.right)
                 else{
                     BinaryNode tmp = findMin(root.right);
                     root.data = tmp.data;
 
                     root.right = remove(tmp.data, tmp.right);
-
                 }
             }
         }
