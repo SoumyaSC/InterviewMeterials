@@ -7,7 +7,7 @@ public class ZeroOneKnapSackRecurssion {
         if(n==0 | W ==0){
             return 0;
         }else{
-            if(value[n-1]<=W){
+            if(weight[n-1]<=W){
                 max = Math.max(value[n-1] + (knapsack(weight, value, W - weight[n - 1], n - 1)),
                         knapsack(weight, value, W, n-1));
             }
@@ -23,9 +23,9 @@ class ZeroOneKnapSackRecDriver{
     public static void main(String []args){
         ZeroOneKnapSackRecurssion z = new ZeroOneKnapSackRecurssion();
         int[] weight = new int[]{1, 2, 4, 7};
-        int[] value = new int[]{3, 2, 1, 7};
+        int[] value = new int[]{3, 2, 100, 7};
         int knapSackWeight = 7;
-        int itemNumbers = 4;
+        int itemNumbers = weight.length;
         int max = z.knapsack(weight, value, knapSackWeight, itemNumbers);
         System.out.println(max);
 
