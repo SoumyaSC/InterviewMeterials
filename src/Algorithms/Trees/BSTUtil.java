@@ -2,7 +2,7 @@ package Algorithms.Trees;
 
 //Helper class for inserting and printing a BST
 
-public abstract class   BSTHelper {
+public abstract class BSTUtil {
     Node root = null;
 
     public Node insert(int data, Node root){

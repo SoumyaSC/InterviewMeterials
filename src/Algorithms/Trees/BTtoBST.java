@@ -6,7 +6,7 @@ package Algorithms.Trees;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BTtoBST extends BSTHelper{
+public class BTtoBST extends BSTUtil{
     int count = 0;
     List<Integer> treeArr = new ArrayList<>();
     Node root = null;

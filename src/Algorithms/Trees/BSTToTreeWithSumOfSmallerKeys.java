@@ -3,7 +3,7 @@ package Algorithms.Trees;
 //BST to a Tree with sum of all smaller keys
 //https://www.geeksforgeeks.org/bst-tree-sum-smaller-keys/
 
-public class BSTToTreeWithSumOfSmallerKeys extends BSTHelper{
+public class BSTToTreeWithSumOfSmallerKeys extends BSTUtil{
 
     //this function has defect
     public void convertTree(Node root, int sum){
