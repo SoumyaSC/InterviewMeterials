@@ -1,4 +1,4 @@
-package Algorithms;
+package Algorithms.DynamicProgramming;
 
 /*
 Given an integer array nums, find the maximum sum of the array

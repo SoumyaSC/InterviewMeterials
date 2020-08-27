@@ -1,5 +1,7 @@
 package DesignPattern;
 
+import java.security.Signature;
+
 public class Singleton {
 
     //step 1: make constructor private

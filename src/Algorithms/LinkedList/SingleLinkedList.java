@@ -1,13 +1,4 @@
-package Algorithms;
-
-class Node{
-    int data;
-    Node next;
-    public Node(int data){
-        this.data = data;
-        next = null;
-    }
-}
+package Algorithms.LinkedList;
 
 public class SingleLinkedList {
 
