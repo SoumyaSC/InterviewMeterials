@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Edge{
+class GraphEdge {
     int from;
     int to;
     int cost;
 
-    public Edge(int from, int to, int cost){
+    public GraphEdge(int from, int to, int cost){
         this.from = from;
         this.to = to;
         this.cost = cost;
@@ -18,20 +18,20 @@ class Edge{
 }
 
 public class CreateGraph {
-    public void createDirectedEdgeGraph(Map<Integer, List<Edge>> graph, int from, int to, int cost){
-        List<Edge> listEdge = graph.get(from);
+    public void createDirectedEdgeGraph(Map<Integer, List<GraphEdge>> graph, int from, int to, int cost){
+        List<GraphEdge> listGraphEdge = graph.get(from);
 
-        if(listEdge == null){
-            listEdge = new ArrayList<>();
+        if(listGraphEdge == null){
+            listGraphEdge = new ArrayList<>();
         }
 
-        listEdge.add(new Edge(from, to, cost));
-        graph.put(from, listEdge);
+        listGraphEdge.add(new GraphEdge(from, to, cost));
+        graph.put(from, listGraphEdge);
     }
 
-    public void printGraph(Map<Integer, List<Edge>> graph){
+    public void printGraph(Map<Integer, List<GraphEdge>> graph){
         for (Map.Entry mapEntry : graph.entrySet()) {
-            List<Edge> arrList = (List<Edge>) mapEntry.getValue();
+            List<GraphEdge> arrList = (List<GraphEdge>) mapEntry.getValue();
             for(int i=0; i<arrList.size(); i++){
                 System.out.println("from " + arrList.get(i).from + " to " + arrList.get(i).to
                 + " with cost: " + arrList.get(i).cost);
@@ -44,7 +44,7 @@ public class CreateGraph {
 class CreateGraphDriver{
     public static void main(String[] args) {
         int numberOfNodes = 5;
-        Map<Integer, List<Edge>> graph = new HashMap<>();
+        Map<Integer, List<GraphEdge>> graph = new HashMap<>();
         CreateGraph createGraph = new CreateGraph();
 
         /*  0

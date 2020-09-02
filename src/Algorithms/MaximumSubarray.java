@@ -13,6 +13,7 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 
  */
 
+//Kande's algorithm
 public class MaximumSubarray {
     public int maxSubarraySum(int[] arr){
         int maxSoFar = 0;
