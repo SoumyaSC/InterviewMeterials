@@ -11,7 +11,7 @@ public abstract class BSTUtil {
             root = node;
         }
         else{
-            if(data>root.data){
+            if(data > root.data){
                 root.right = insert(data, root.right);
             }
             else{
