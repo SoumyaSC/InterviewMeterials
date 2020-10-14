@@ -44,5 +44,8 @@ public class EqualsAndHashCode {
         pen.add(pen2);
 
         System.out.println(pen);
+
+        System.out.println(pen1.hashCode());
+        System.out.println(pen2.hashCode());
     }
 }
